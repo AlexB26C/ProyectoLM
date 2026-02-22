@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="parteArriba">
+        <h1>Gestión de examenes</h1>
+        <nav class="navegador">
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="tareas.html">Mis Tareas</a></li>
+                <li><a href="examenes.html">Mis Examenes</a></li>
+                <li><a href="proyectos.html">Mis Proyectos</a></li>
+                <li><button onclick="logout()">Cerrar Sesión</button></li>
+            </ul>
+        </nav>
+    </div>
+    <h2>Mis examenes</h2>
+    <button id="botonPestana" onclick="abrirPestana()">Añadir Examen</button>
+    <div id="añadirItem" class="añadirItem">
+        <div class="contenido-añadirItem">
+            <h2 id="tituloAñadirItem">Añadir Examen</h2>
+            <p>Examen:</p>
+            <input type="text" id="nombre" maxlength="41">
+            <p>Fecha de examen:</p>
+            <input type="date" id="fecha">
+            <br>
+            <br>
+            <button onclick="agregarItem()">Guardar</button>
+            <button onclick="cerrarPestana()">Cancelar</button>
+        </div>
+    </div>
+    <ul id="lista"></ul>
+    <div id="pestanaLista" class="pestanaLista">
+    <div class="contenido-pestanaLista">
+        <span id="cerrarPestanaLista">&times;</span>
+        <h2 id="pestanaListaTitulo"></h2>
+        <p id="pestanaListaFecha"></p>
+        <p id="pestanaListaDias"></p>
+    </div>
+</div>
+    <script>
+        const tipoFijo = "Examen";
+    </script>
+    <script src="app.js"></script>
+    <script src="AuthUsuarios.js"></script>
+</body>
+
+</html>

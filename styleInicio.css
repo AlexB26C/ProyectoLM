@@ -1,0 +1,36 @@
+.dashboard {
+    display: flex;
+    justify-content: space-between; /* tres columnas distribuidas */
+    gap: 20px;
+    margin: 20px;
+}
+
+.columna {
+    flex: 1;
+    max-width: 300px;
+}
+
+/* mover la izquierda un poquito hacia la derecha */
+.columna.izquierda {
+    margin-left: 200px; /* aumenta un poco el espacio hacia el centro */
+}
+
+/* mover la derecha un poquito hacia la izquierda */
+.columna.derecha {
+    margin-right: 200px; /* acerca la columna derecha al centro */
+}
+
+.columna ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.columna li {
+    padding: 12px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    color: #000;
+    width: 100%;
+    box-sizing: border-box;
+}

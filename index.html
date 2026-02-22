@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio - Gestión de Exámenes</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styleInicio.css">
+</head>
+<body>
+    <div id="parteArriba">
+        <h1>Gestor del curso</h1>
+        <nav class="navegador">
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="tareas.html">Mis Tareas</a></li>
+                <li><a href="examenes.html">Mis Examenes</a></li>
+                <li><a href="proyectos.html">Mis Proyectos</a></li>
+                <li><button onclick="logout()">Cerrar Sesión</button></li>
+            </ul>
+        </nav>
+    </div>
+
+    <div class="dashboard">
+        <div class="columna izquierda">
+            <h2>Próximos exámenes</h2>
+            <ul id="resumenExamenes"></ul>
+        </div>
+
+        <div class="columna centro">
+            <h2>Últimos proyectos</h2>
+            <ul id="resumenProyectos"></ul>
+        </div>
+
+        <div class="columna derecha">
+            <h2>Últimas tareas</h2>
+            <ul id="resumenTareas"></ul>
+        </div>
+    </div>
+
+
+    <script src="app.js"></script>
+    <script src="AuthUsuarios.js"></script>
+</body>
+
+</html>

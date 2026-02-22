@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="parteArriba">
+        <h1>Gestión de proyectos</h1>
+        <nav class="navegador">
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="tareas.html">Mis Tareas</a></li>
+                <li><a href="examenes.html">Mis Examenes</a></li>
+                <li><a href="proyectos.html">Mis Proyectos</a></li>
+                <li><button onclick="logout()">Cerrar Sesión</button></li>
+            </ul>
+        </nav>
+    </div>
+    <h2>Mis proyectos</h2>
+    <button id="botonPestana" onclick="abrirPestana()">Añadir proyecto</button>
+    <div id="añadirItem" class="añadirItem">
+        <div class="contenido-añadirItem">
+            <h2 id="tituloAñadirItem">Añadir Proyecto</h2>
+            <p>Proyecto:</p>
+            <input type="text" id="nombre">
+            <p>Fecha de entrega:</p>
+            <input type="date" id="fecha">
+            <br>
+            <br>
+            <button onclick="agregarItem()">Guardar</button>
+            <button onclick="cerrarPestana()">Cancelar</button>
+        </div>
+    </div>
+    <ul id="lista"></ul>
+    <script>
+        const tipoFijo = "Proyecto";
+    </script>
+    <script src="app.js"></script>
+    <script src="AuthUsuarios.js"></script>
+</body>
+
+</html>
