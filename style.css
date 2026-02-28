@@ -66,8 +66,10 @@ body {
 }
 
 #parteArriba h1{
-    font-size: 24px;
+    font-size: 26px;
     text-align: center;
+    border: none;
+    margin: 0;
 }
 
 .navegador {
@@ -78,7 +80,7 @@ body {
 .navegador ul {
     display: flex;
     list-style: none;
-    gap: 15px;
+    gap: 10px;
     padding: 0px;
 }
 
@@ -96,7 +98,7 @@ body {
     background-color: #ede9ff;
     border-radius: 3px;
     border: none;
-    padding: 7px;
+    padding: 6px;
     font-size: xx-small ;
 }
 
@@ -118,6 +120,7 @@ h1 {
 h2 {
     text-align: center;
     color: #6054bb;
+    font-size: large;
 }
 
 #lista li {
