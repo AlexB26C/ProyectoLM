@@ -79,7 +79,7 @@ body {
     display: flex;
     list-style: none;
     gap: 15px;
-    padding: 0;
+    padding: 0px;
 }
 
 .navegador li {
@@ -96,9 +96,7 @@ body {
     background-color: #ede9ff;
     border-radius: 3px;
     border: none;
-    text-align: right;
-    padding: 8px;
-    line-height: 3px;
+    padding: 7px;
     font-size: xx-small ;
 }
 
